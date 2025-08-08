@@ -121,11 +121,11 @@ if len(X) > 0:
 
     st.subheader("Key Insights")
     st.markdown("""
-    - **Cluster 0**: Looking at the average income and spending scores, this group stands out with about $100,000 income and an 80 spending score, making them best candidates to target for high-cost products.  
-    - **Cluster 1**: Low income, big spenders, likely to be loyal if serviced correctly. By checking the averages, this group has around $30,000 income but spends a lot (70 score), hinting they might stick around with the right incentives.  
-    - **Cluster 2**: Medium-income, low spending. Not much to derive.  
-    - **Cluster 3**: Average income, balanced spender, ideal for general market.  
-    - **Cluster 4**: Young, low-income, low spenders—could grow into loyal customers later.
+    - **Cluster 0**: Lower-middle income, slightly above-average spending. May respond well to value-for-money products.  
+    - **Cluster 1**: Upper-middle income, average spending. Stable segment, good for mid-tier offerings.  
+    - **Cluster 2**: High income, moderate spending. Potential for luxury targeting if spending habits can be influenced.  
+    - **Cluster 3**: Middle income, balanced spending. Ideal for general market strategies.
+    - **Cluster 4**: Low income, low spending, younger demographic. Could be nurtured into future loyal customers with budget-friendly options.
     """)
 
 
