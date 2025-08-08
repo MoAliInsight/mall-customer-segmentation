@@ -1,50 +1,26 @@
-You're super close—just one small fix needed! The error is happening because Git is still trying to push to the wrong remote URL (yourusername/...) instead of your actual GitHub repo (MoAliInsight/...).
-
-Let’s fix that in two quick steps:
-
- Step 1: Remove the Wrong Remote
-Run this to delete the incorrect remote:
-
-bash
-git remote remove origin
- Step 2: Add the Correct Remote
-Now add your actual GitHub repo:
-
-bash
-git remote add origin https://github.com/MoAliInsight/mall-customer-segmentation.git
- Step 3: Push to GitHub
-Finally, push your code:
-
-bash
-git push -u origin main
-Once that’s done, refresh your GitHub repo page and you should see all your files uploaded. Let me know if you want help writing a README or deploying the app to Streamlit Cloud!
-
-make the readme
-Absolutely! Here's a polished README.md tailored for your Mall Customer Segmentation project. It highlights your Streamlit app, your EDA notebook, and the dataset—all in a clean, professional format.
-
- README.md
-markdown
-#  Mall Customer Segmentation
-
-This project analyzes and segments mall customers based on their demographic and spending behavior. It includes both an exploratory data analysis (EDA) notebook and an interactive Streamlit app for visualizing customer clusters.
-
----
-
-##  Project Structure
-
-mall-customer-segmentation/ ├── Visual.py # Streamlit app for interactive clustering ├── mall-customer-segmentation.ipynb # Jupyter notebook for data cleaning & EDA ├── customer_segmentation.ipynb # Additional notebook (optional) ├── data/ │ └── Mall_Customers.csv # Dataset ├── requirements.txt # Python dependencies
+## How to Use
+Check out the app here: https://malltheory.streamlit.app/
 
 
----
+# Insights
+## Cluster 0: Looking at the average income and spending scores, this group stands out with about $100,000 income and an 80 spending score, making them best candidates to target for highcost products.
 
-##  Streamlit App
+## cluster 1: Low income, big spenders, likely to be loyal if serviced correctly. By checking the averages, this group has around $30,000 income but spends a lot (70 score), hinting they might stick around with the right incentives.
 
-The `Visual.py` file launches a Streamlit app that:
-- Loads and preprocesses customer data
-- Applies clustering algorithms (e.g., KMeans)
-- Visualizes clusters using interactive Plotly charts
-- Allows users to explore customer segments dynamically
+## Cluster 2: Medium-income, low spending. not much to derive.
+
+## Cluster 3: Average income, balanced spender, ideal for general market.
+
+## Cluster 4: Young, low-income, low spenders—could grow into loyal customers later.
+
+## App FeaturesData
+Ovaerall: Shows a sample of 200 customers with income, spending, and age stats.
+Exploratory Insights: Plots income vs. spending, colored by gender, sized by age.
+Customer Segmentation: Groups customers into 5 clusters using K-means, with elbow method to pick clusters.
+Cluster Profiles: Averages for each cluster’s income, spending, and age.
 
 
- Live Deployment (Optional)
-You can deploy the app to Streamlit Cloud by connecting this GitHub repo and selecting Visual.py as the entry point.
+
+## Issues Faced
+cluster colors not changing as expected so it has no contrast but def still easy to read 
+
