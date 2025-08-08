@@ -1,29 +1,22 @@
-## Mall Customer Segmentation
-This project uses KMeans clustering to segment mall customers based on income and spending score. It includes a Streamlit app for interactive exploration.
-
-## Files
-Visual.py: Streamlit app
-
-mall-customer-segmentation.ipynb: Data cleaning and analysis
-
-data/Mall_Customers.csv: Dataset
-
-requirements.txt: Python dependencies
-
-## How to Run
-deployed via stramlit 
-https://malltheory.streamlit.app/
+## How to Use
+Check out the app here: https://malltheory.streamlit.app/
 
 
-## How to Run Locally
-streamlit run Visual.py
-Install Dependencies
-pip install -r requirements.txt
+# Insights
+Cluster 0: Looking at the average income and spending scores, this group stands out with about $100,000 income and an 80 spending score, making them best candidates to target for highcost products.
+cluster 1: Low income, big spenders, likely to be loyal if serviced correctly. By checking the averages, this group has around $30,000 income but spends a lot (70 score), hinting they might stick around with the right incentives.
+Cluster 2: Medium-income, low spending. not much to derive
+Cluster 3: Average income, balanced spender, ideal for general market.
+Cluster 4: Young, low-income, low spenders—could grow into loyal customers later.
+
+## App FeaturesData
+Ovaerall: Shows a sample of 200 customers with income, spending, and age stats.
+Exploratory Insights: Plots income vs. spending, colored by gender, sized by age.
+Customer Segmentation: Groups customers into 5 clusters using K-means, with elbow method to pick clusters.
+Cluster Profiles: Averages for each cluster’s income, spending, and age.
 
 
-## Features
-Filter customers by gender and age
 
-Visualize clusters and spending behavior
+## Issues Faced
+cluster colors not changing as expected so it has no contrast but def still easy to read 
 
-Explore customer segmentation interactively
